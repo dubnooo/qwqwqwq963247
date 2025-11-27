@@ -1,0 +1,199 @@
+/* =========================================
+   1. ГЛОБАЛЬНІ СТИЛІ ТА БРЕНДИНГ
+   ========================================= */
+
+body {
+    font-family: Arial, sans-serif;
+    /* Фірмовий сірий/світлий фон */
+    background-color: #F0F0F0; 
+    color: #333333;
+    margin: 0;
+}
+
+/* =========================================
+   2. HEADER ТА КНОПКА ЗНИЖОК
+   ========================================= */
+
+header {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%; /* Збалансований відступ */
+    margin-bottom: 0; /* Прибираємо зайвий відступ перед NAV */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    /* ВИПРАВЛЕНО: Прибрано некоректне позиціонування */
+    position: static; 
+}
+
+.button {
+    /* Фірмовий червоний колір */
+    background-color: #E63946; 
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background-color: #A31C25; /* Темніший червоний при наведенні */
+}
+
+/* =========================================
+   3. НАВІГАЦІЯ (NAV)
+   ========================================= */
+
+nav {
+    /* Темно-сірий фон, що контрастує з шапкою */
+    background-color: #4A4A4A; 
+    border-top: 5px solid #E63946; /* Акцентна червона лінія */
+    border-bottom: 5px solid #E63946;
+    padding: 15px 5%; /* Збалансований відступ */
+    display: flex;
+    justify-content: space-around; /* Рівномірний розподіл посилань */
+}
+
+.nav-link {
+    font-size: 18px; /* Зменшено розмір для компактності */
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #E63946; /* Червоний текст при наведенні */
+    background-color: #FFFFFF;
+}
+
+/* =========================================
+   4. ОСНОВНИЙ КОНТЕНТ (MAIN)
+   ========================================= */
+
+h1 {
+    text-align: center;
+    color: #4A4A4A; 
+    font-size: 32px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.info {
+    /* Використання Grid для адаптивності карток */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px; /* Трохи розширено */
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.post {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+}
+
+.post h2 {
+    color: #E63946;
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.post-img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.post-text {
+    font-size: 16px; /* Зменшено для кращої читабельності */
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.article-but {
+    /* Кнопка "Детальніше" у фірмовому стилі */
+    background-color: #4A4A4A; 
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 0;
+    display: block;
+    width: 100%; /* Займає всю ширину картки */
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    position: static;
+}
+
+.article-but:hover {
+    background-color: #E63946;
+}
+
+.full-image {
+    margin: 50px 0;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.social {
+    display: inline-block;
+    width: 30px;
+    margin: 0 10px;
+}
+
+/* =========================================
+   5. FOOTER
+   ========================================= */
+
+footer {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 5%;
+    margin-top: 40px;
+    border-top: 5px solid #E63946;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-text {
+    font-size: 16px;
+    margin-right: 30px;
+    color: #4A4A4A; /* Чорний текст на білому фоні */
+}
+
+.footer-text span {
+    /* Виділення ключів фірмовим червоним */
+    color: #E63946; 
+    font-weight: bold;
+}
+
+.footer-logo img {
+    width: 100px;
+    margin-left: 50px;
+}
